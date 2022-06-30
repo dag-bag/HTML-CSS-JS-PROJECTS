@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.h1-1{
+    font-size: 2.8rem;
+    padding: 20px;
+    font-family: "Bree Serif", serif;
+}
+.center{text-align: center;}
+
+.h2-2{
+    font-size: 2.0rem;
+padding: 12px;
+font-family: "Bree Serif", serif;
+}
+
+#services .box p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+

@@ -1,0 +1,130 @@
+@media (max-width: 1255px) {
+  .maxWidth {
+    padding: 0 5rem;
+    width: auto;
+  }
+  .navbar .menu {
+    background-color: #111;
+    position: fixed;
+    height: 100vh;
+    color: white;
+    width: 100%;
+    padding-top: 8rem;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu li {
+    display: block;
+
+    font-size: 2.5rem;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .menuBtn {
+    display: block;
+    z-index: 100;
+    top: 0;
+    right: 0;
+  }
+  .btn {
+    color: white;
+    background-color: var(--background);
+    padding: 1.5rem 2.5rem !important;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    border: 0.2rem solid var(--background);
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 620px) {
+  .about .maxWidth .aboutContent .right {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .about .maxWidth .aboutContent .left img {
+    height: 33rem;
+  }
+  .about .maxWidth .aboutContent .right p {
+    font-size: 1.5rem;
+  }
+  .team .maxWidth .teamContent .card .video .text {
+    background: rgba(31, 27, 27, 0.7);
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 10%;
+    left: 0%;
+    width: 77%;
+    border-radius: 1rem;
+  }
+  .team .maxWidth .teamContent .card .video .text h4 {
+    font-size: 2rem;
+  }
+  .team .maxWidth .teamContent .card .video .text h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .home .maxWidth {
+    margin: auto 0 auto 0rem;
+  }
+  .btn {
+    color: white;
+    background-color: var(--background);
+    padding: 1rem 2rem !important;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    border: 0.2rem solid var(--background);
+    transition: all 0.5s ease;
+  }
+}
+@media (max-width: 386px) {
+  .home .maxWidth {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 902px) {
+  /* .services,
+  .tools {
+    height: 110vh;
+  } */
+}
+@media (max-width: 902px) {
+  /* .services,
+  .tools {
+    height: 170vh;
+  } */
+}
+@media (max-width: 707px) {
+  /* .services,
+  .tools {
+    height: 200vh;
+  } */
+}
+@media (max-width: 533px) {
+  /* .services,
+  .tools {
+    height: 220vh;
+  } */
+}
+@media (max-width: 467px) {
+  /* .services,
+  .tools {
+    height: 212vh;
+  } */
+}

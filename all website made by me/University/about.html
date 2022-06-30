@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--------- HOME and NAVIGATION SECION ----------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="eduford_img/logo.png" alt="This is logo" />
+            </a>
+            <div class="nav-links" id="links">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COUSRSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------ABout us-----------section----------->
+    <div class="about-us">'
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempora totam possimus eveniet, eaque pariatur nobis consequatur nulla amet repellat fuga atque blanditiis aliquid, quis nemo tempore deserunt sint ut. Magnam esse quas corrupti, id maiores provident deleniti nostrum voluptatum atque tenetur reiciendis beatae similique? Cumque tempora dicta quod quibusdam!</p>
+                <a href="hero-btn" class="hero-btn">Explore Now</a>
+               
+            </div>
+            <div class="about-col">
+                <img src="eduford_img/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+<!-----------------------------FOOTER-------------------------------------------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tenetur, error expedita culpa quasi sed <br> enim fuga accusamus sunt Lorem ipsum dolor sit amet.</p>
+   <div class="icons">
+        <img src="Icons_img/facebook.png" alt="">
+        <img src="Icons_img/linkedin.png" alt="">
+        <img src="Icons_img/youtube.png" alt="">
+        <img src="Icons_img/twitter.png" alt="">
+    </div>
+    <p>Made with <img src="Icons_img/love.png" alt="">HTML and CSS</p>
+</section>
+
+
+
+
+    <!------------ Javascript for toggle menu ----------------->
+    <script>
+        var links = document.getElementById("links");
+        function showmenu() {
+            links.style.right = "0";
+        }
+        function hidemenu() {
+            links.style.right = "-200px";
+        }
+    </script>
+    <!------------ Javascript for toggle menu ----------------->
+</body>
+
+</html>

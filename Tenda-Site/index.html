@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <nav>
+    
+        <div class="nav">
+            <img src="logo-inverse.png" alt="">
+            <img id="menubtn" src="https://img.icons8.com/ios-filled/40/ffffff/menu.png"/>
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option value="Japanese">Japanese</option>
+                <option value="French">French</option>
+                <option value="Jermen">Jermen</option>
+                <option value="Greek">Greek</option>
+            </select>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="gapla" id="sidenavbar">
+        
+        <ul>
+<li> <img src="https://img.icons8.com/ios/35/000000/wifi-router.png"/><a href="index.html">STATUS</a></li>
+
+<li><img src="https://img.icons8.com/ios/35/000000/internet--v1.png"/><a href="internet-settings.html">INTERNET SETTINGS</a></li>
+<li><img src="https://img.icons8.com/ios/35/000000/wireless-cloud-access.png"/><a href="#">WIRELESS SETTINGS</a></li>
+<li><img src="https://img.icons8.com/ios/35/000000/outgoing-data.png"/><a href="#">BANDWIDTH CONTROL</a></li>
+<li><img src="https://img.icons8.com/ios/35/000000/thin-client.png"/><a href="#">WIRELESS REPEATING</a></li>
+<li><img src="https://img.icons8.com/windows/32/000000/defend-family--v3.png"/><a href="#">PARENTS CONTROL</a></li>
+<li><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/32/000000/external-settings-business-kiranshastry-lineal-kiranshastry.png"/><a href="#">ADVANCED</a></li>
+
+        </ul>
+    </div>
+    <div class="items">
+        <div class="item-col">
+            <h1>Internet Connection Status</h1>
+            <div class="i-col box1">
+<div class="photo">
+    <!-- <i class="fa fa-desktop fa-4x"></i> -->
+    <img src="https://img.icons8.com/wired/64/000000/multiple-devices.png"/>
+    <div class="line">
+        <span class="lines1"></span>
+        <span class="lines2"></span>
+    </div>
+    <img src="https://img.icons8.com/external-wanicon-lineal-wanicon/64/000000/external-router-internet-of-things-wanicon-lineal-wanicon.png"/>
+    <div class="line">
+        <span class="lines1"></span>
+        <span class="lines2"></span>
+    </div>
+    <img src="https://img.icons8.com/ios/50/000000/internet--v3.png"/>
+</div>
+<div class="text"><h3>Connection Status: </h3>
+    <p>You can surf the internet.</p></div>
+
+            </div>
+            <h1>Attached Devices and Real-time Statistics</h1>
+            <div class="i-col box2">
+                <div class="box2-col">
+              
+                    <div class="sub-box1 subbox">
+                        <div class="h1"><h1>5</h1></div>
+<div class="user"><i class="fas fa-users"></i><p>Attached Devices</p></div>
+
+                </div>
+                <div class="sub-box2 subbox">
+                    <div class="h1"><h1>10.0<sub>MB/s</sub></h1>
+                    </div>
+<div class="user"><i class="fas fa-download"></i><p>Download Speed</p></div>
+                </div>
+                <div class="sub-box3 subbox">
+
+<div class="h1"><h1>0.0<sub>KB/s</sub></h1></div>
+<div class="user"><i class="fas fa-upload"></i><p>Upload Speed</p></div>
+                </div>
+            </div>
+            </div>
+            <h1>System Info</h1>
+            <div class="i-col box3">
+                <div class="ip">
+                    <div class="ip-text">
+                        <h4>COnnection Type</h4>
+                        <h4>COnnection Duration</h4>
+                        <h4>WAC MAN</h4>
+                        <h4>LAN IP</h4>
+                        <h4>Firmware Version</h4>
+                    </div>
+                    <div class="ip-info">
+                        <p>PPPoE</p>
+                        <p>8h 31m 34s</p>
+                        <p>04:95:E6:9C:2D:78</p>
+                        <p>192.168.0.1</p>
+                        <p>V12.01.01.45_multi</p>
+                    </div>
+                </div>
+                <div class="dns">
+                    <div class="ip-text">
+                        <h4>WAN IP</h4>
+                        <h4>Subnet Mask</h4>
+                        <h4>Default Gateway</h4>
+                        <h4>Preferred DNS Server</h4>
+                        <h4>Alternative DNS Server</h4>
+                    </div>
+                    <div class="ip-info">
+                        <p>172.17.38.164</p>
+                        <p>255.255.255.254</p>
+                        <p>43.239.205.2</p>
+                        <p>103.233.116.181</p>
+                        <p>8.8.8.8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenavbar = document.getElementById("sidenavbar");
+ 
+ sidenavbar.style.right = "-250px";
+ menubtn.onclick = function(){
+     if(sidenavbar.style.right == "-250px"){
+         sidenavbar.style.right = "0"
+     }
+     else{
+         sidenavbar.style.right = "-250px"
+     }
+ }
+ 
+    </script>
+</body>
+</html>

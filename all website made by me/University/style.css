@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap");
+:root {
+  --header-color: #f44336;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* ------------------------------------------------------HEADER NAVIGATION LOGO HOMe page------------------------------------ */
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("eduford_img/banner.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 8%;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  display: inline-block;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 0px 10px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+
+  font-size: 16.5px;
+}
+.nav-links ul li ::after {
+  content: "";
+  /* position: absolute;
+  left: 0;
+  bottom: 0; */
+
+  width: 0%;
+  height: 3px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: all 0.5s linear;
+}
+.nav-links ul li :hover::after {
+  width: 100%;
+}
+
+.tex-box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.tex-box h1 {
+  font-size: 63px;
+}
+.tex-box p {
+  font-size: 15px;
+  margin: 10px 0px 40px;
+}
+.hero-btn {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 23px;
+  cursor: pointer;
+  position: relative;
+}
+.hero-btn:hover {
+  border: 1px solid var(--header-color);
+  background: var(--header-color);
+  transition: 1s;
+}
+.fas {
+  display: none;
+}
+/* ------------------------------------------------------HEADER NAVIGATION LOGO HOMe page------------------------------------ */
+/* -----------------------------------------MEDIA QUARIES For HOME PAGE---------------------------------- */
+@media screen and (max-width: 700px) {
+  .tex-box h1 {
+    font-size: 20px;
+  }
+  .nav-links {
+    position: absolute;
+    background: var(--header-color);
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+    text-align: left;
+    display: inline-block;
+  }
+  .nav-links ul li {
+    display: block;
+    padding: 14px 43px;
+  }
+  .fas {
+    cursor: pointer;
+
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+  }
+  #links{
+    transition: all 0.5s;
+  }
+}
+/* -----------------------------------------MEDIA QUARIES For HOME PAGE---------------------------------- */
+
+/* --------------------------------------------------------HEADER NAVIGATION LOGO HOME MEDIA QUARIES FOR HOME CLOSE  --------------------*/
+
+
+
+/*--------------------COURSE-------------*/
+.course{
+    width: 80%;
+    text-align: center;
+    padding: 100px;
+    margin: auto;
+}
+.course h1{
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.course p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.course .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.course-col{
+    flex-basis:31% ;
+    background: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+
+}
+
+.course-col:hover{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+/*-----------media----quaries_----------------*/
+@media  screen and (max-width:700px) {
+  .course .row{
+    flex-direction: column;
+  }
+  .course{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+  
+}
+/*-----------media----quaries_----close------------*/
+
+/*----------------------CAMPUS SECTION--------------*/
+.campus .cam{
+  font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.campus h1{
+  font-size: 38px;
+font-weight: 600;
+}
+.campus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+.campus .row{
+  display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.campus-col img{
+  width: 100%;
+  margin:0px 5px ;
+  border-radius: 15px;
+}
+.campus-col{
+  flex-basis: 30%;
+  overflow: hidden;
+  position: relative;
+}
+.layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+.layer:hover{
+  
+  background: rgba(226,0,0,0.4);
+  border-radius: 15px;
+
+}
+.layer h3{
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: white;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom: 50%;
+
+}
+/*-----------------------------------------*/
+@media  screen and (max-width:700px){
+  .campus .row{
+    flex-direction: column;
+  }
+
+}
+/*------------------------------OUr facilities-------------------------------------*/
+.Facilities h1{
+  font-size: 38px;
+  text-align: center;
+font-weight: 600;
+
+}
+.Facilities .cam{
+  font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Facilities{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+.row{
+  justify-content: space-evenly;
+  display: flex;
+  padding-top: 60px;
+}
+.facilities-col{
+  flex-basis: 30%;
+  text-align: left;
+
+}
+.facilities-col p{
+  line-height: 20px;
+  font-size: 14px;
+font-weight: 300;
+
+}
+.facilities-col h3{
+  padding: 10px 0px 5px 0px;
+}
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+@media  screen and (max-width:700px){
+  .Facilities .row{
+    flex-direction: column;
+  }
+}
+/*---------------------------------OUr Testimonials------------------------------------------------------*/
+.Testimonials{
+  padding-top: 100px;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.Testimonials h1{font-size: 38px;
+  text-align: center;
+font-weight: 600;}
+.Testimonials p{
+  
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;}
+.test-row{
+  margin-top: 50px;
+  display: flex;
+}
+.Testimonials-col{
+  display: inherit;
+  height: 198px;
+width: 519px;
+  border-radius: 10px;
+  background: #fff3f3;
+  margin: 0px 10px;
+}
+.Testimonials-col img{
+  height: 40px;
+padding: 5px 0px 0px 50px;
+  border-radius: 23px;
+  height: 40px;
+
+}
+.Testimonials-col .fa{
+  color: #f44336;
+  text-align: center;
+  margin: auto;
+}
+
+
+.text{
+  text-align: center;
+}
+/*------------------------------------------------------meida quaries--------------------------------------*/
+@media screen and (max-width:700px) {
+  .test-row{
+    flex-direction: column;
+  }
+  .Testimonials-col{
+    display: block;
+width: 350px;
+height: 236px;
+margin: 10px auto;
+
+  }
+  
+}
+
+
+/*------------------------call to action--------------------*/
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('eduford_img/banner2.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 350px;
+  padding: 100px 0px;
+  border-radius: 20px;
+}
+.cta h1{
+  font-size: 41px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  padding: 36px;
+
+}
+
+
+/*------------------------------------------------------meida quaries--------------------------------------*/
+@media screen and (max-width:700px) {
+  .cta h1{
+    font-size: 24px
+  }
+.cta{
+  padding: 35px 0;
+  margin-top: 50px;
+}
+
+}
+
+
+/*-------------------------------------------------------FOOOTER-----------------------------*/
+.footer{
+  width: 100%;
+  padding: 100px 0px;
+  text-align: center;
+}
+.footer h4{
+  font-weight: 600;
+  margin: 25px 0px;
+}
+.icons img{
+  margin: 5px;
+}
+/*----------------------------------------SUB HEADER--------------------------*/
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('eduford_img/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  position: relative;
+  
+  
+}
+
+.sub-header h1{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  
+}
+.about-us{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0px 50px 0px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img{
+  width: 100%;
+}
+.about-col a{
+  color: #f44336;
+  border: 2px solid #f44336;
+}
+.about-col a:hover{
+  color: white;
+}
+.about-col p{
+  padding: 10px 0px 25px 0px;
+}
+
+/*-----------------------------------BLog content------------------*/
+.blog{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0px;
+  display: flex;
+}
+.left-blog{
+  flex-basis: 65%;
+}
+.left-blog img{
+  width: 100%;
+}
+.left-blog h2{
+  font-weight: 600;
+  padding: 30px 0px;
+  color: #222;
+}
+.left-blog p{
+  color: #999;
+  padding-bottom:15px ;
+}
+.right-blog h3{
+  background: #f44336;
+  color: white;
+  padding:7px 0 ;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.right-blog div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  columns: #555;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.right-blog{
+  flex-basis: 32%;
+  padding-left: 15px;
+}
+
+/*----------------------MEDIA QUARIES------------------------*/
+@media screen and (max-width:700px) {
+  .blog{
+    flex-direction: column;
+  }
+  .comment-box{
+    flex-basis: 100% !important;
+  }
+  
+}
+
+
+/*--------------------------------FORM------------------------*/
+.form{
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.comment-box button{
+  color: #f44336;
+  border: 2px solid #f44336;
+  margin: 50px 0;
+  padding: 10px 20px ;
+}
+.comment-box{
+  flex-basis: 65%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+.comment-box h3{
+  text-align: left;
+}
+.comment-form input , textarea{ 
+  width: 95%;
+  padding: 10px 20px;
+  margin:auto;
+  
+  box-sizing: border-box;
+border: none;
+outline: none;
+background: #f0f0f0;
+margin: 15px 10px;
+}
+
+/*------COntACT us-----------section-----------*/
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe{
+  width: 100%;
+}
+.contact{
+  width: 80%;
+  margin: auto;
+}
+
+.contact .row{
+  display: flex;
+  flex-direction: row;
+}
+.contact-col{
+  flex-basis: 48%;
+}
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div img{
+  height: 30px;
+  color: #f44336;
+margin-right: 10px;
+}
+
+
+
+

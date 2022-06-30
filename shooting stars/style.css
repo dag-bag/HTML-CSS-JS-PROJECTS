@@ -1,0 +1,40 @@
+body{
+    overflow: hidden;
+    } 
+    section{position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(vicky.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position-x:center ;
+    background-size: cover;
+    animation: porn 50s linear infinite;}
+    @keyframes porn {0%,100%{transform: scale(1);}
+    50%{transform: scale(1.2);}    
+    }
+    span{position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 0 20px rgba(255,255,255,1);}
+    span::before{content:'';
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 1px;
+    transform: translate(-50%);
+   background: linear-gradient(90deg, #fff, transparent);
+   
+   animation: animate 3s linear infinite; }
+
+@keyframes animate {
+    0%{transform: rotate(360deg) translateX(0);opacity: 1px;}
+    70%{opacity: 1px;}
+    100%{transform: rotate(360deg) translateX(-1000px); opacity: 1px;}
+}

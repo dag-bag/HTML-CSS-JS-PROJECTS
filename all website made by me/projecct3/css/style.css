@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+#nav {
+  font-family: "Bree Serif", serif;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 11vh;
+}
+.logo {
+  margin: 10px 12px;
+}
+.logo img {
+  border: 2px solid red;
+  height: 70px;
+  border-radius: 37px;
+}
+nav ul {
+  display: flex;
+  
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  /* margin: auto; */
+  /* display: block; */
+  color: white;
+  margin: 0px 0px 0px 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0px 10px;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+  /* border-radius:10px ; */
+
+  border-radius: 37px;
+}
+
+ul::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+input {
+  font-family: "Bree Serif", serif;
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  outline: none;
+  border: none;
+}
+input[placeholder] {
+  padding: 0px 10px;
+}
+/* input:hover{
+        width: 300px;
+        outline: 2px solid red;
+        height: 30px;
+        
+    } */
+.search {
+  height: 25px;
+  /* margin-top: 7px; */
+  padding-right: 5px;
+}
+.mix {
+  width: 320px;
+  height: 30px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 50px;
+  border-radius: 20px;
+}
+.mix:focus {
+  outline: 2px solid blue;
+}
+
+.button {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+button {
+  border: none;
+}
+
+.btn1 {
+  background: rgb(220, 148, 14);
+  margin: 0px 5px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  font-family: "Bree Serif", serif;
+}
+.btn1:hover {
+  box-shadow: inset 100px 0 orangered;
+  border-radius: 50px;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 15px;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+#home::before {
+  background: url("../bg.jpg") no-repeat center center;
+  position: absolute;
+  content: "";
+  height: 750px;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+  background-size: cover;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.lize:after {
+  content: "";
+  animation: deal 10s infinite;
+  font-size: 2rem;
+}
+@keyframes deal {
+  0% {
+    content: "MEAL SERVICES";
+  }
+  20% {
+    content: "QUICK DELIVERY";
+  }
+  50% {
+    content: "REALTIME MONITORING";
+  }
+  70% {
+    content: "50% OFF ON FIRTST ORDER";
+  }
+  100% {
+    content: "Best FOOF SECURITY";
+  }
+}
+
+.order {
+  color: white;
+  height: 34px;
+  width: 82px;
+
+  margin-top: 15px;
+  background-color: darkorange;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: order 2s ease infinite;
+}
+.order:hover {
+  animation-play-state: paused;
+}
+
+@keyframes order {
+  0% {
+  }
+  30% {
+    background: rgb(198, 116, 28);
+  }
+  65% {
+    content: "place now";
+    background: rgb(117, 19, 32);
+  }
+
+  100% {
+    transform: scale(1.2);
+    background: rgb(226, 196, 77);
+  }
+}
+/* services section */
+
+#services {
+  display: flex;
+}
+
+#services .box {
+  font-family: "Bree Serif", serif;
+  display: flex;
+  border: 2px solid rgb(105, 63, 9);
+  width: 500px;
+  height: 350px;
+  flex-direction: column;
+  margin: 5px 10px;
+  border-radius: 10px;
+  /* background: #eddada; */
+}
+#services .box img {
+  display: block;
+  height: 195px;
+  margin: auto;
+}
+.section-2{
+  height: 700px;
+}
+.section-2::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-image: url('../img/sectiono-bg.jpg');
+  z-index: -1;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.80;
+  background-repeat: no-repeat;
+  
+}
+.foodorder{
+  border-radius: 50px;
+}
+
+
+  
+
+
+/* client section */
+#client-section{
+  margin-top: 10px;
+  /* height: 350px; */
+  /* border: 2px solid red; */
+}
+#client-section::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  background-image: url('../sectionbg.jpg');
+  z-index: -1;
+  background-size:cover ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+}
+.clients-box{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#clients{
+  padding: 0px 35px;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#clients img{
+  height: 200px;
+}
+
+/* contact us section */
+.contact{
+  
+  height: 500px;
+}
+.contact::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background-image: url('../contact.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+.contact-form{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form textarea{
+     font-family: "Bree Serif", serif;;
+}
+.contact-form label{
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1.2rem;
+  
+}
+
+

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+.svg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rebeccapurple;
+}
+.custom-shape-divider-bottom-1630080774 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630080774 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 136px;
+    transform: rotateY(180deg);
+    animation: svg 1s linear infinite alternate;
+}
+@keyframes svg {
+   
+}
+
+.custom-shape-divider-bottom-1630080774 .shape-fill {
+    fill: #1EB19A;
+    animation: colo 1s linear infinite alternate;
+}
+
+
+.custom-shape-divider-bottom-1630080954 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630080954 svg {
+    position: relative;
+    display: block;
+    width: calc(128% + 1.3px);
+    height: 277px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1630080954 .shape-fill {
+    fill: #9013FE;
+}

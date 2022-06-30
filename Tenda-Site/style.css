@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-color: #d7d7d7;
+}
+
+nav{
+
+    background: #ed7020;
+    height: 40px;
+}
+
+.nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav select{
+    font-size: 17px;
+margin-top: 11px;
+background: #ed7020;
+border: none;
+outline: none;
+color: white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    min-height:calc(100vh - 40px - 30px) ;
+    margin-top: 30px;
+    background: #f2f2f2;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.gapla{
+    width: 196px;
+    height: 100%;
+    background-color: #e3e3e3;
+    text-align: center;
+}
+
+.gapla li {
+    list-style: none;
+   border-bottom: 1px solid #dbdbdb;
+    padding: 20px;
+}
+.gapla li:hover > a{
+    color: #ed7020;
+    
+}
+
+.gapla li:hover{
+    background: #f2f2f2;
+
+}
+
+.gapla li:nth-child(1){
+    background: #f2f2f2;
+    margin-top: 30px;
+ } 
+.gapla li a {
+    color: #666;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: 400;
+line-height: 1;
+font-size:14px;
+margin-left: 10px;
+
+}
+.items{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    color: #666;
+}
+.items h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+margin-left: 10%;
+}
+.i-col{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #d2d2d2;
+    height: 150px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+
+    background: #ffffff;
+}
+.box2:hover{
+    border: 1px solid orange;
+cursor: pointer;
+
+}
+.photo{
+    width: 70%;
+    height: 80%;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+justify-content: center;
+
+}
+.line{
+    margin: 0px 15px;
+}
+.lines1{
+    height: 2px ;
+    background: #9fd8eb;
+    width: 130px;
+    display: block;
+}
+.lines2{
+    height: 2px;
+    background: #5fbfdf;
+    width: 130px;
+    display: block;
+    margin-top: 1px;
+}
+.text{
+    display: flex;
+    margin-left: 50px;
+}
+.text p{
+    color: #38ae38;
+}
+.box2-col{
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 100%;
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+justify-content:space-between;
+}
+.subbox{
+height: 100%;
+width: 150px;
+/* border: 1px solid black; */
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.subbox h1{
+    font-weight: 500;
+    font-family:Tahoma, sans-serif;
+font-size: 3rem;
+}
+.subbox p{
+    color: #666;
+}
+.subbox h1 sub{
+    font-size: 12px;
+}
+.sub-box1{
+    color: #0099cc;
+}
+.sub-box2{
+color: #009900;
+}
+.sub-box3{
+color: #ed7020;
+}
+.box3{
+    height: 350px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Internet settings */
+.gapla ul:active > *:nth-child(2){
+    background: black;
+   
+ } 
+ .iii{
+     display: flex;
+ }
+ .ip{
+     /* border: 1px solid red; */
+     display: grid;
+     grid-template-columns: 50% 50%;
+    }
+    /* .ip-text{ */
+        
+        /* border: 1px solid red; */
+    /* }
+    .ip-info{ */
+     /* border: 1px solid red; */
+
+ /* } */
+ .ip-text h4{
+     text-align: right;
+     color: black;
+     padding: 20px 0;
+     font-family: 'Ubuntu', sans-serif;
+ }
+.ip-text h4:nth-child(1){
+    margin-top: 15px;
+}
+.ip-info p{
+    text-align: left;
+    color: #666;
+    padding: 21px 0;
+    padding-left: 35px;
+    font-size: 15px;
+}
+.ip-info p:nth-child(1){
+   margin-top: 17px;
+}
+.dns{
+    /* border: 1px solid red; */
+     display: grid;
+     grid-template-columns: 50% 50%;
+}
+nav *:nth-child(2){
+    display: none;
+}
+#sidenavbar{
+    transition: all 0.5s;
+}
+/* media quaries */
+@media screen and (max-width:1060px) {
+   .gapla {
+       position: fixed;
+       right: -200px;
+       top: 35px;
+   }
+.container{
+    grid-template-columns: 100%;
+}
+nav *:nth-child(2){
+    display: block;
+}
+nav *:nth-child(3){
+    display: none;
+}
+}
+/* mobile media quaris */
+@media  screen and (max-width:860px) {
+    .container{
+        width: 100%;
+    }
+    .photo,.box2-col{
+        width: 100%;
+    }
+    .photo img{
+        width: 40px;
+    }
+    .box3{
+        grid-template-columns: 100%;
+    }
+    .lines1,.lines2{
+        width: 60px;
+    }
+    .text{
+        margin: 0;
+    }
+    .text h3{
+        font-size: 14px;
+        padding-left: 50px;
+    }
+    .text p{
+        font-size: 13px;
+    }
+    .i-col{
+        margin-bottom: 15px;
+    }
+    .subbox h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .subbox .user p{
+        font-size: 14px;
+        display: flex;
+        text-align: center;
+
+    }
+    .subbox .user i{
+padding: 5px 0 5px 50px;
+
+    }
+    
+    .sub-box3 .user i{
+padding-bottom: 2px 0;
+    }
+    .box3{
+        height: 484px;
+    }
+    .ip-info p{
+        padding:12px ;
+    }
+    .ip-text h4{
+        padding:8px ;
+    }
+    .ip{
+        height: 171px;
+    }
+    #menubtn{
+        z-index: 100;
+    }
+}

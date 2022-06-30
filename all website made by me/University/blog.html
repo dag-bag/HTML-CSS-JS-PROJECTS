@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--------- HOME and NAVIGATION SECION ----------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="eduford_img/logo.png" alt="This is logo" />
+            </a>
+            <div class="nav-links" id="links">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COUSRSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>OUR Certification & Online Programs For 2021</h1>
+    </section>
+        <!------------------------blog page content---------------->
+        <section class="blog">
+            
+            <div class="left-blog"><img src="eduford_img/certificate.jpg" alt="">
+                <h2>Our Online Programes & Certification for 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, modi quas veniam odio ad earum vero, dolores id excepturi, iste quo voluptas a eius. Itaque quaerat laudantium minus iusto tempore.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quos quam laudantium velit minima qui, nisi nemo ipsam ipsa dolores aspernatur impedit vitae autem numquam <br> error placeat sint! Corrupti in maxime officiis magnam, iure, odit architecto temporibus rerum, expedita iste possimus est saepe! Autem, ea? Aliquid veritatis itaque placeat doloremque?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi amet sit ullam quasi accusantium deleniti quisquam possimus maiores. Voluptate sint, dolores ab itaque aut minus.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Doloribus, eos quaerat. Facere, sequi doloribus? Praesentium doloremque, nisi error eaque cupiditate facere eos dolorem sapiente laboriosam dignissimos minus quisquam incidunt sint distinctio, beatae repellat aliquam commodi esse aperiam. Perferendis, nisi deserunt.</p>
+
+               
+            </div>
+            <div class="right-blog">
+                <h3>Post Categories</h3>
+              <div>  <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+
+            <div>  <span> Data Science</span>
+                <span>29</span>
+            </div>
+            <div>  <span>Google  Analytics</span>
+                <span>35</span>
+            </div>
+            <div>  <span>Google ADs</span>
+                <span>45</span>
+            </div>
+            <div>  <span>SEO and Social Media Marketing</span>
+                <span>40</span>
+            </div>
+            </div>
+        </section>
+        <!----------------------Fo'r'm--------------------------------->
+        <section class="form">
+        <div class="comment-box">
+            <h3>Leave a Comment</h3>
+           <form action="" class="comment-form">
+               <input type="text" name="name" id="name" placeholder="Enter Your name">
+               <input type="email" name="email" id="email" placeholder="Enter Your email">
+               <textarea name="" id="comment"  rows="10" placeholder="Leave Your Comment"></textarea>
+               <button type="submit" class="hero-btn">Post Comment</button>
+           </form>
+        </div>
+    </section>
+<!-----------------------------FOOTER-------------------------------------------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tenetur, error expedita culpa quasi sed <br> enim fuga accusamus sunt Lorem ipsum dolor sit amet.</p>
+   <div class="icons">
+        <img src="Icons_img/facebook.png" alt="">
+        <img src="Icons_img/linkedin.png" alt="">
+        <img src="Icons_img/youtube.png" alt="">
+        <img src="Icons_img/twitter.png" alt="">
+    </div>
+    <p>Made with <img src="Icons_img/love.png" alt="">HTML and CSS</p>
+</section>
+
+
+
+
+    <!------------ Javascript for toggle menu ----------------->
+    <script>
+        var links = document.getElementById("links");
+        function showmenu() {
+            links.style.right = "0";
+        }
+        function hidemenu() {
+            links.style.right = "-200px";
+        }
+    </script>
+    <!------------ Javascript for toggle menu ----------------->
+</body>
+
+</html>

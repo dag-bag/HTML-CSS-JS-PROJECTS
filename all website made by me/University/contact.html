@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--------- HOME and NAVIGATION SECION ----------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="eduford_img/logo.png" alt="This is logo" />
+            </a>
+            <div class="nav-links" id="links">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COUSRSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>CONTACT  Us</h1>
+    </section>
+
+    <!------COntACT us-----------section----------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7005.842693201648!2d77.0720573!3d28.602136299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1628432078687!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+    <section class="contact">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+<img src="Icons_img/home.png" alt="">
+<span>
+<h5>XYZ ROAD, ABC Building</h5>
+<p>Banglore, Karnataka, IN</p>
+</span>
+            </div>
+            <div>
+                <img src="Icons_img/email.png" alt="">
+                <span>
+                <h5>+91 8766203976</h5>
+                <p>Open 8 to 6pm</p>
+
+                </span>
+                            </div>
+                            <div>
+                                <img src="Icons_img/call.png" alt="">
+                                <span>
+                                <h5>XYZvirender@gmail.com</h5>
+                                <p>EMail on your quary</p>
+                                </span>
+                                            </div>
+                                           
+        </div>
+    </section>
+    
+            <!----------------------Fo'r'm--------------------------------->
+            <section class="form">
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                   <form action="" class="comment-form">
+                       <input type="text" name="name" id="name" placeholder="Enter Your name">
+                       <input type="email" name="email" id="email" placeholder="Enter Your email">
+                       <textarea name="" id="comment"  rows="10" placeholder="Leave Your Comment"></textarea>
+                       <button type="submit" class="hero-btn">Post Comment</button>
+                   </form>
+                </div>
+            </section>
+<!-----------------------------FOOTER-------------------------------------------->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tenetur, error expedita culpa quasi sed <br> enim fuga accusamus sunt Lorem ipsum dolor sit amet.</p>
+   <div class="icons">
+        <img src="Icons_img/facebook.png" alt="">
+        <img src="Icons_img/linkedin.png" alt="">
+        <img src="Icons_img/youtube.png" alt="">
+        <img src="Icons_img/twitter.png" alt="">
+    </div>
+    <p>Made with <img src="Icons_img/love.png" alt="">HTML and CSS</p>
+</section>
+
+
+
+
+    <!------------ Javascript for toggle menu ----------------->
+    <script>
+        var links = document.getElementById("links");
+        function showmenu() {
+            links.style.right = "0";
+        }
+        function hidemenu() {
+            links.style.right = "-200px";
+        }
+    </script>
+    <!------------ Javascript for toggle menu ----------------->
+</body>
+
+</html>

@@ -1,0 +1,753 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&family=Sora:wght@300;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+
+  font-family: var(--font-epilouge);
+}
+
+:root {
+  --font-epilouge: "Epilogue", sans-serif;
+  --font-sora: "Sora", sans-serif;
+  --background: crimson;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* ulities classes */
+.maxWidth {
+  width: 130rem;
+  margin: auto;
+  padding: 0 8rem;
+}
+.btn {
+  color: white;
+  background-color: var(--background);
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  border: 0.2rem solid var(--background);
+  transition: all 0.5s ease;
+  animation: test 1s linear ease 1;
+}
+.btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.maxWidth .title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.maxWidth .title::after {
+  content: "What i Provide";
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  left: 50%;
+  bottom: -20%;
+  color: var(--background);
+  padding: 0.5rem;
+  background-color: #111;
+  transform: translate(-50%);
+}
+.maxWidth .title::before {
+  content: "";
+  position: absolute;
+  width: 25rem;
+  height: 0.5rem;
+  left: 50%;
+  bottom: 0%;
+  color: var(--background);
+
+  background-color: #fff;
+  transform: translate(-50%);
+}
+.text {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+p {
+  /* text-align: center; */
+
+  font-size: 1.8rem;
+  /* text-rendering: geometricPrecsision; */
+  font-weight: 500;
+  /* text-justify: inter-cluster; */
+  /* color: red; */
+  margin-bottom: 3rem;
+}
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  /* background-color: var(--background); */
+  /* background: transparent; */
+  font-family: var(--font-epilouge);
+  padding: 2rem 0;
+  transition: all 0.5s;
+}
+.navbar.sticky {
+  background: var(--background);
+  padding: 3rem 0;
+}
+.navbar .maxWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo a {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: var(--background);
+}
+.navbar.sticky .logo a span {
+  color: white;
+}
+.navbar .menu li {
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: white;
+  font-size: 1.8rem;
+  margin-left: 2.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: var(--background);
+}
+.navbar.sticky .menu li a:hover {
+  color: white;
+}
+/* header section end */
+/* Home section starts */
+
+.home {
+  font-family: var(--font-sora);
+  display: flex;
+  background: url(images/banner.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 50rem;
+  color: #fff;
+  overflow: hidden;
+}
+.home .maxWidth {
+  margin: auto 0 auto 4rem;
+}
+.home .maxWidth .text1 {
+  padding-bottom: 1rem;
+  font-size: 2.7rem;
+}
+.home .maxWidth .text2 {
+  font-size: 7.5rem;
+  font-weight: 600;
+  margin-left: -0.7rem;
+}
+.home .maxWidth .text3 {
+  font-size: 4rem;
+  margin: 5px 0;
+  margin-bottom: 4.5rem;
+  /* animation: test 5s linear infinite; */
+}
+.home .maxWidth .text3 span {
+  color: var(--background);
+}
+/* Menu button */
+.menuBtn {
+  color: #fff;
+  font-size: 2.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* About section starts */
+.about .maxWidth .aboutContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about .maxWidth .title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.about {
+  padding-bottom: 10rem;
+}
+.about .maxWidth .title::after {
+  content: "Who i am";
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  left: 50%;
+  bottom: -20%;
+  color: var(--background);
+  padding: 0.5rem;
+  background-color: #fff;
+  transform: translate(-50%);
+}
+.about .maxWidth .title::before {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 0.5rem;
+  left: 50%;
+  bottom: 0%;
+  color: var(--background);
+
+  background-color: #111;
+  transform: translate(-50%);
+}
+
+.about .maxWidth .aboutContent .left {
+  flex: 1 1 30rem;
+}
+.about .maxWidth .aboutContent .left img {
+  width: 100%;
+  object-fit: cover;
+  height: 40rem;
+}
+
+.about .maxWidth .aboutContent .right {
+  flex: 1 1 60rem;
+  /* text-align: center; */
+  font-size: 2rem;
+  padding: 6rem;
+}
+.about .maxWidth .aboutContent .right .text {
+  /* text-align: center; */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.about .maxWidth .aboutContent .right .text span {
+  /* text-align: center; */
+  font-size: 2.5rem;
+  color: var(--background);
+  font-weight: 600;
+}
+.about .maxWidth .aboutContent .right p {
+  /* text-align: center; */
+  text-align: justify;
+  font-size: 1.8rem;
+  /* text-rendering: geometricPrecsision; */
+  font-weight: 500;
+  /* text-justify: inter-cluster; */
+  /* color: red; */
+  margin-bottom: 3rem;
+}
+.about .maxWidth .aboutContent .right .btn {
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+}
+.about .maxWidth .aboutContent .right .btn:hover {
+  background: none;
+  color: var(--background);
+}
+/* Servicces section starts */
+
+.services {
+  background-color: #111;
+  color: white;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+.services .maxWidth .servicesContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services .maxWidth .title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.services .maxWidth .title::after {
+  content: "What i Provide";
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  left: 50%;
+  bottom: -20%;
+  color: var(--background);
+  padding: 0.5rem;
+  background-color: #111;
+  transform: translate(-50%);
+}
+.services .maxWidth .title::before {
+  content: "";
+  position: absolute;
+  width: 25rem;
+  height: 0.5rem;
+  left: 50%;
+  bottom: 0%;
+  color: var(--background);
+
+  background-color: #fff;
+  transform: translate(-50%);
+}
+
+.services .maxWidth .servicesContent .card {
+  flex: 1 1 30rem;
+  background-color: #222;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.services .maxWidth .servicesContent .card i {
+  font-size: 5rem;
+  color: var(--background);
+}
+.services .maxWidth .servicesContent .card .text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.services .maxWidth .servicesContent .card p {
+  font-size: 1.5rem;
+
+  margin: 1rem 0;
+}
+.services .maxWidth .servicesContent .card:hover {
+  background-color: var(--background);
+  color: white;
+}
+
+.services .maxWidth .servicesContent .card:hover i {
+  color: #fff;
+}
+.services .maxWidth .servicesContent .card:hover .box {
+  transform: scale(1.05);
+}
+.services .maxWidth .servicesContent .card .box {
+  transition: all 0.5s ease;
+}
+/* .services .maxWidth .servicesContent .card:nth-child(1),
+card:nth-child(3),
+card:nth-child(6) {
+  animation: box1 1s linear 1 normal;
+  /* transform: translate(-55rem); */
+
+/* Skills section Starts */
+
+.skillHome {
+  width: 100%;
+  height: 100vh;
+}
+
+.skillHome .maxWidth .skillsContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.skillHome .maxWidth .title::after {
+  background: #fff;
+  content: "What skill i have";
+}
+.skillHome .maxWidth .title::before {
+  background: black;
+}
+
+.skillHome .maxWidth .skillsContent .left {
+  flex: 1 1 40rem;
+}
+.skillHome .maxWidth .skillsContent .left a {
+  color: white;
+  background-color: var(--background);
+
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  border: 0.2rem solid var(--background);
+  transition: all 0.5s ease;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+}
+.skillHome .maxWidth .skillsContent .left a:hover {
+  background: none;
+  color: var(--background);
+}
+.skillHome .maxWidth .skillsContent .right {
+  flex: 1 1 40rem;
+}
+.skillHome .maxWidth .skillsContent .right .bars {
+  margin-bottom: 1.5rem;
+}
+.skillHome .maxWidth .skillsContent .right .bars .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skillHome .maxWidth .skillsContent .right .bars .info span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.skillHome .maxWidth .skillsContent .right .bars .line {
+  width: 100%;
+  height: 0.5rem;
+  background: lightgrey;
+  position: relative;
+}
+.skillHome .maxWidth .skillsContent .right .bars .line::before {
+  content: "";
+
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: crimson;
+}
+.skillHome .maxWidth .skillsContent .right .bars .HTML::before {
+  width: 90%;
+}
+.skillHome .maxWidth .skillsContent .right .bars .CSS::before {
+  width: 70%;
+}
+.skillHome .maxWidth .skillsContent .right .bars .JS::before {
+  width: 80%;
+}
+.skillHome .maxWidth .skillsContent .right .bars .Ads::before {
+  width: 90%;
+}
+.skillHome .maxWidth .skillsContent .right .bars .Content::before {
+  width: 60%;
+}
+.footer {
+  background: #111;
+  /* height: 10rem; */
+  color: white;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+.footer .maxWidth .FooterContent {
+  padding-top: 10rem;
+}
+.footer .maxWidth .FooterContent .card h1 {
+  color: crimson;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.footer .maxWidth .foooterMain {
+  text-align: center;
+}
+.footer .maxWidth .foooterMain p {
+  font-size: 2rem;
+}
+.footer .maxWidth .foooterMain p a {
+  color: crimson;
+}
+/* Prarice session */
+.anime {
+  animation: box1 0.3s linear 1;
+}
+.footer {
+  background: #111;
+}
+.footer .maxWidth .FooterContent {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .maxWidth .FooterContent .card {
+  flex: 1 1 35rem;
+}
+.footer .maxWidth .FooterContent .card .box .subBox .head {
+  display: flex;
+}
+.footer .maxWidth .FooterContent .card .box .subBox h3 {
+  font-size: 2rem;
+}
+.footer .maxWidth .FooterContent .card .box .subBox span {
+  height: 0.2rem;
+  width: 1rem;
+  background-color: white;
+
+  margin: 0.7rem 0.5rem 0 0.5rem;
+}
+.footer .maxWidth .FooterContent .card .box .subBox p {
+  font-size: 1.5rem;
+}
+.footer .maxWidth .FooterContent .card .box .subBox i {
+  font-size: 3rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.footer .maxWidth .FooterContent .card .box #form input,
+textarea {
+  background: #fff;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.footer .maxWidth .FooterContent .card .box #submit {
+  padding: 1rem 2rem;
+  background: var(--background);
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 0.2rem solid var(--background);
+  transition: all 0.5s;
+}
+
+.footer .maxWidth .FooterContent .card .box #form input:focus,
+textarea:focus {
+  border: 0.2rem solid crimson;
+}
+.footer .maxWidth .FooterContent .card .box #submit:hover {
+  background: none;
+}
+@keyframes test {
+  to {
+    transform: translateX(-42rem);
+  }
+  from {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box1 {
+  0% {
+    transform: translateX(-55rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/* skils html */
+.skillHome {
+  font-family: var(--font-sora);
+  display: flex;
+  background: linear-gradient(rgba(31, 27, 27, 0.7), rgba(31, 27, 27, 1)),
+    url(images/skills2.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 50rem;
+  color: #fff;
+  overflow: hidden;
+}
+.skillHome .maxWidth {
+  margin: auto 0 auto 4rem;
+}
+
+/* Tools i use */
+.tools {
+  height: 100vh;
+}
+.tools .maxWidth .toolsContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.tools .maxWidth .toolsContent .card {
+  /* border: 2px solid crimson; */
+  flex: 1 1 35rem;
+  border-radius: 2rem;
+  background: #111;
+  padding: 1rem 3.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+/* .tools .maxWidth .toolsContent .card .box .layer {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 2rem;
+  padding-top: 5rem;
+  transition: all 0.5s;
+}
+.tools .maxWidth .toolsContent .card .box .layer h3 {
+  font-size: 5rem;
+}
+.tools .maxWidth .toolsContent .card .box:hover .layer {
+  top: 0%; */
+/* display: block; */
+/* } */
+
+.tools .maxWidth .toolsContent .card .box {
+  text-align: center;
+  transition: all 0.5s;
+}
+.tools .maxWidth .toolsContent .card:hover .box {
+  transform: scale(1.05);
+}
+.tools .maxWidth .toolsContent .card:hover .icon i {
+  color: white;
+}
+.tools .maxWidth .toolsContent .card:hover {
+  background: crimson;
+}
+
+.tools .maxWidth .toolsContent .card .box .icon {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: crimson;
+}
+.tools .maxWidth .toolsContent .card .box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* color: var(--background); */
+  color: white;
+}
+.tools .maxWidth .toolsContent .card .box p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  /* color: var(--background); */
+}
+
+.teamHome {
+  font-family: var(--font-sora);
+  display: flex;
+  background: linear-gradient(rgba(31, 27, 27, 0.7), rgba(31, 27, 27, 1)),
+    url(images/teamBG.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 50rem;
+  color: #fff;
+  overflow: hidden;
+}
+.teamHome .maxWidth {
+  margin: auto 0 auto 4rem;
+}
+.teamHome .maxWidth .TeamContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.teamHome .maxWidth .TeamContent .left {
+  flex: 1 1 40rem;
+}
+.teamHome .maxWidth .TeamContent .left .imgContainer img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+.teamHome .maxWidth .TeamContent .left .imgContainer {
+  width: 80%;
+  /* padding-top: 15srem; */
+
+  margin-right: auto;
+}
+.teamHome .maxWidth .TeamContent .left .text {
+  font-size: 4rem;
+  margin-bottom: 10rem;
+}
+.teamHome .maxWidth .TeamContent .right {
+  flex: 1 1 40rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+.teamHome .maxWidth .TeamContent .right img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.team .maxWidth .title {
+  color: white;
+}
+
+.team .maxWidth .title::after {
+  background: #fff;
+  content: "Meet With our Hearts";
+}
+.team .maxWidth .title::before {
+  background: #fff;
+  color: white;
+}
+
+.team {
+  height: 100vh;
+  background: #111;
+}
+.home .maxWidth .teamContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.team .maxWidth .teamContent .card {
+  flex: 1 1 90vh;
+}
+.team .maxWidth .teamContent .card .video video {
+  width: 100%;
+  z-index: -100;
+}
+.team .maxWidth .teamContent .card .video {
+  position: relative;
+}
+.team .maxWidth .teamContent .card .video .text {
+  background: rgba(31, 27, 27, 0.7);
+  position: absolute;
+  color: white;
+  z-index: 1;
+  top: 10%;
+  left: 10%;
+  width: 50%;
+  border-radius: 1rem;
+}
+.team .maxWidth .teamContent .card .video .text h4 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.team .maxWidth .teamContent .card .video .text h6 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

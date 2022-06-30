@@ -1,0 +1,29 @@
+*{margin: 0;
+padding: 0;}
+body{
+
+    background-image: url("bg2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-blend-mode:multiply;
+    background-color: rgb(155, 154, 243);
+    animation: blend 10s linear alternate infinite;
+}
+@keyframes blend {
+    
+    0%{
+        background-blend-mode:multiply;
+        }
+        30%{
+            background-blend-mode:color-burn;
+            }
+            60%{
+                background-blend-mode:luminosity;
+                }
+                100%{
+                    background-blend-mode:hue;
+                    }
+    }

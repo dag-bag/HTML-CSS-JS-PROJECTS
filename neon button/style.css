@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(14, 4, 47);
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+a{text-decoration: none;
+position: relative;
+letter-spacing: 8px;
+font-size: 40px;
+color: #0ff;
+transition: 0.2s;
+border: 3px solid #0ff;
+padding: 1rem 2rem;
+transition: 0.2s;
+}
+a:hover{color: #000;
+    background: #0ff;
+    box-shadow:0 0 50px #0ff, 0 0 21px #0ff ;
+
+   }
